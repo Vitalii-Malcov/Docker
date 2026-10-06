@@ -1,0 +1,43 @@
+(.venv) PS D:\Project_Docker\homework\homework_3> docker build -t memory_info .
+[+] Building 274.2s (12/12) FINISHED                                                                                                                            docker:desktop-linux
+ => [internal] load build definition from Dockerfile                                                                                                                            1.2s
+ => => transferring dockerfile: 691B                                                                                                                                            0.0s
+ => [internal] load metadata for docker.io/library/python:latest                                                                                                                8.1s
+ => [auth] library/python:pull token for registry-1.docker.io                                                                                                                   0.0s
+ => [internal] load .dockerignore                                                                                                                                               1.8s
+ => => transferring context: 2B                                                                                                                                                 0.1s
+ => [1/6] FROM docker.io/library/python:latest@sha256:7e30bd51483a565ac6b2119af3f4cc179aba3ecd0b64d14cc9e64629df60d1f6                                                        188.5s
+ => => resolve docker.io/library/python:latest@sha256:7e30bd51483a565ac6b2119af3f4cc179aba3ecd0b64d14cc9e64629df60d1f6                                                          1.1s
+ => => sha256:9b0ef59a9f4a28807b303d1eb7a6a0c4eb187b53a2ed0ae3750fca20ee654eaa 250B / 250B                                                                                      0.6s
+ => => sha256:6e255bfcc16cae673909be415fe982468c3dfd2481ddf3c34ff916222513b6d5 29.80MB / 29.80MB                                                                               18.8s
+ => => sha256:083b5813628da1e450362b8a33640d74bc93822e23c6a2ef7829b045bf8689f6 6.09MB / 6.09MB                                                                                  4.4s
+ => => sha256:4dc3950125ebc9ed195e1101fc6c02e2fce113ba0f53bfb05b2cdf58747df9af 67.81MB / 67.81MB                                                                               38.5s
+ => => sha256:b2eb680928d477abf960adfa8bb00fa681dac38ca5f624850072ed2976a80607 236.96MB / 236.96MB                                                                             94.4s
+ => => sha256:4846f29007305297af653c57bf9b60ba8f676a38695c68d98460063442581671 49.39MB / 49.39MB                                                                               33.5s
+ => => sha256:62fe2e747f69f2f414c7e9eb1553155cf0a658398f0462557f458821dce2b29d 25.64MB / 25.64MB                                                                               20.2s
+ => => extracting sha256:4846f29007305297af653c57bf9b60ba8f676a38695c68d98460063442581671                                                                                      10.8s
+ => => extracting sha256:62fe2e747f69f2f414c7e9eb1553155cf0a658398f0462557f458821dce2b29d                                                                                       5.0s
+ => => extracting sha256:4dc3950125ebc9ed195e1101fc6c02e2fce113ba0f53bfb05b2cdf58747df9af                                                                                      14.4s
+ => => extracting sha256:b2eb680928d477abf960adfa8bb00fa681dac38ca5f624850072ed2976a80607                                                                                      64.9s
+ => => extracting sha256:083b5813628da1e450362b8a33640d74bc93822e23c6a2ef7829b045bf8689f6                                                                                       2.9s
+ => => extracting sha256:6e255bfcc16cae673909be415fe982468c3dfd2481ddf3c34ff916222513b6d5                                                                                      11.0s
+ => => extracting sha256:9b0ef59a9f4a28807b303d1eb7a6a0c4eb187b53a2ed0ae3750fca20ee654eaa                                                                                       1.4s
+ => [internal] load build context                                                                                                                                               4.4s
+ => => transferring context: 1.13kB                                                                                                                                             0.0s
+ => [2/6] WORKDIR /app                                                                                                                                                          6.3s
+ => [3/6] COPY requirements.txt .                                                                                                                                               2.5s
+ => [4/6] COPY memory_info.py .                                                                                                                                                 3.4s
+ => [5/6] RUN python3 -m pip install -r requirements.txt -U                                                                                                                    15.4s
+ => [6/6] RUN mkdir -p data                                                                                                                                                     5.8s
+ => exporting to image                                                                                                                                                         32.7s
+ => => exporting layers                                                                                                                                                        18.6s
+ => => exporting manifest sha256:feaca42fa019e6a047ef9f94e606cb3b184f74b50996f664197accbf0173d557                                                                               1.2s
+ => => exporting config sha256:e5f51c7cef0d68e0c3e31a1a6da9a8af9c0bf4e26e347d9ad6913bf8013d648c                                                                                 0.9s
+ => => exporting attestation manifest sha256:7793652b94b75f88d63d6b0e2dac82dba1a8f4e98bd9a1da86432bd8feb77093                                                                   1.6s
+ => => exporting manifest list sha256:73924a22e2203194bab9cf5bf5de2a5f25132dfb5dc945ea7ba38dcaabdc4eff                                                                          1.0s
+ => => naming to docker.io/library/memory_info:latest                                                                                                                           0.1s
+ => => unpacking to docker.io/library/memory_info:latest                                                                                                                        7.7s
+
+View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/9h39vgtovm31pqc270l45jnpg
+
+
